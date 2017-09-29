@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.upc.eseiaat.pma.kmamilles.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/label_km"
+        android:layout_width="87dp"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="56dp"
+        android:layout_toLeftOf="@+id/edit_km"
+        android:layout_toStartOf="@+id/edit_km"
+        android:text="@string/km"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <Button
+        android:id="@+id/btn_a_millas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/label_km"
+        android:layout_alignStart="@+id/label_km"
+        android:layout_below="@+id/edit_km"
+        android:layout_marginTop="26dp"
+        android:text="@string/a_millas"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <Button
+        android:id="@+id/btn_a_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_a_millas"
+        android:layout_alignBottom="@+id/btn_a_millas"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="@string/a_kilometros"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <TextView
+        android:id="@+id/label_millas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_a_millas"
+        android:layout_alignStart="@+id/btn_a_millas"
+        android:layout_below="@+id/btn_a_millas"
+        android:layout_marginTop="38dp"
+        android:text="@string/mls"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <EditText
+        android:id="@+id/edit_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/label_km"
+        android:layout_alignBottom="@+id/label_km"
+        android:layout_alignRight="@+id/btn_a_km"
+        android:layout_alignEnd="@+id/btn_a_km" />
+
+    <EditText
+        android:id="@+id/edit_millas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignBottom="@+id/label_millas"
+        android:layout_alignRight="@+id/btn_a_km"
+        android:layout_alignEnd="@+id/btn_a_km" />
+
+</RelativeLayout>
